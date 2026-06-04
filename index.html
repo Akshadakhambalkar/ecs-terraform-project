@@ -1,71 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AK DevOps Dashboard</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-    }
-
-    header {
-      background: #1e293b;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 50px;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 15px;
-      border-radius: 12px;
-      width: 250px;
-      text-align: center;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    }
-
-    .status {
-      color: #22c55e;
-      font-weight: bold;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>🚀 AK DevOps CI/CD Dashboard</header>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AK DevOps Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
 
+    <!-- HEADER -->
     <h1>🚀 AK DevOps Command Center</h1>
 
     <p class="subtitle">
         Production Grade AWS ECS Deployment using Terraform & Docker
     </p>
 
+    <!-- TOP CARDS -->
     <div class="cards">
 
         <div class="card">
@@ -84,34 +37,49 @@
         </div>
 
         <div class="card">
-            <h3>📦 Amazon ECR</h3>
-            <p>Connected</p>
-        </div>
-
-        <div class="card">
             <h3>⚡ CI/CD</h3>
             <p>GitHub Actions Enabled</p>
         </div>
 
+    </div>
+
+    <!-- LIVE METRICS -->
+    <div class="cards">
+
         <div class="card">
-            <h3>🌐 Load Balancer</h3>
-            <p>Active</p>
+            <h3>📊 Deployments</h3>
+            <p>15+ Successful Deployments</p>
+        </div>
+
+        <div class="card">
+            <h3>🟢 System Status</h3>
+            <p>All Services Healthy</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Pipeline</h3>
+            <p>Fully Automated</p>
         </div>
 
     </div>
 
+    <!-- LIVE TIME -->
+    <p style="text-align:center; color:#38bdf8; font-size:18px;">
+        🕒 Live Time: <span id="time"></span>
+    </p>
+
+    <!-- ================= RESUME BOX ================= -->
     <div class="architecture">
 
         <h2>👤 About Me</h2>
 
         <p>
             <strong>AKSHADA KHAMBALKAR</strong><br>
-            Bachelor of Engineering (Computer Science)<br>
-            2022 - 2026
+            B.E Computer Science (2022-2026)
         </p>
 
         <p>
-            Aspiring DevOps and Cloud Engineer with hands-on experience in AWS, Docker, Terraform, GitHub Actions and CI/CD pipelines.
+            Aspiring DevOps & Cloud Engineer with hands-on experience in AWS, Docker, Terraform, GitHub Actions and CI/CD pipelines.
         </p>
 
         <h2>🛠 Technical Skills</h2>
@@ -126,45 +94,47 @@
             <li>Python (Basic)</li>
         </ul>
 
-        <h2>🎓 Education</h2>
-
-        <p>
-            College of Engineering and Technology, Akola<br>
-            B.E Computer Science<br>
-            SGPA: 6.26
-        </p>
-
-        <h2>📂 Featured Project</h2>
-
-        <p>
-            CI/CD Deployment on AWS ECS Fargate using Terraform and GitHub Actions.
-        </p>
-
         <h2>📞 Contact</h2>
 
-        <p>
-            Email: akshadakhambalkar1734@gmail.com
-        </p>
-
-        <p>
-            <a href="https://www.linkedin.com/in/akshada-khambalkar-56a463284/" target="_blank">
-                LinkedIn Profile
-            </a>
-        </p>
-
-        <p>
-            <a href="https://github.com/Akshadakhambalkar" target="_blank">
-                GitHub Profile
-            </a>
-        </p>
+        <p>Email: akshadakhambalkar1734@gmail.com</p>
 
     </div>
 
+    <!-- ================= AWS ARCHITECTURE BOX (SEPARATE) ================= -->
+    <div class="card" style="margin-top:20px; padding:20px;">
+
+        <h2>☁ AWS Architecture</h2>
+
+        <pre style="color:#38bdf8;">
+User
+ │
+ ▼
+GitHub Actions (CI/CD)
+ │
+ ▼
+Docker Build
+ │
+ ▼
+Amazon ECR
+ │
+ ▼
+ECS Fargate Service
+ │
+ ▼
+Application Load Balancer
+        </pre>
+
+    </div>
+
+    <!-- FOOTER -->
     <div class="footer">
         <p>Built by AK 🚀</p>
     </div>
 
 </div>
+
+<!-- LIVE TIME SCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>
