@@ -11,13 +11,14 @@
 
 <div class="container">
 
+    <!-- HEADER -->
     <h1>🚀 AK DevOps Command Center</h1>
 
     <p class="subtitle">
         Production Grade AWS ECS Deployment using Terraform & Docker
     </p>
 
-    <!-- TOP CARDS -->
+    <!-- TOP DASHBOARD CARDS -->
     <div class="cards">
 
         <div class="card">
@@ -52,7 +53,7 @@
 
         <div class="card">
             <h3>🟢 System Status</h3>
-            <p style="color:lightgreen;">All Services Healthy</p>
+            <p>All Services Healthy</p>
         </div>
 
         <div class="card">
@@ -62,13 +63,13 @@
 
     </div>
 
-    <!-- MAIN SECTION -->
-    <div class="architecture">
+    <!-- LIVE TIME -->
+    <p style="text-align:center; color:#38bdf8; font-size:18px;">
+        🕒 Live Time: <span id="time"></span>
+    </p>
 
-        <!-- LIVE TIME -->
-        <p style="text-align:center; color:#38bdf8; font-size:18px;">
-            🕒 Live Time: <span id="time"></span>
-        </p>
+    <!-- RESUME SECTION -->
+    <div class="architecture">
 
         <h2>👤 About Me</h2>
 
@@ -80,16 +81,6 @@
         <p>
             Aspiring DevOps & Cloud Engineer with hands-on experience in AWS, Docker, Terraform, GitHub Actions and CI/CD pipelines.
         </p>
-
-        <h2>📊 Live System Status</h2>
-
-        <ul>
-            <li>✅ Docker Container Running</li>
-            <li>✅ ECS Service Healthy</li>
-            <li>✅ Load Balancer Active</li>
-            <li>✅ CI/CD Pipeline Working</li>
-            <li>✅ Terraform Infrastructure Deployed</li>
-        </ul>
 
         <h2>☁ AWS Architecture</h2>
 
@@ -156,7 +147,7 @@ Application Load Balancer
 
 </div>
 
-<!-- IMPORTANT: JS LINK (LIVE TIME FIX) -->
+<!-- LIVE TIME SCRIPT (IMPORTANT) -->
 <script src="script.js"></script>
 
 </body>
