@@ -1,34 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AK DevOps Project</title>
-  <link rel="stylesheet" href="style.css">
+    <title>AK DevOps Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="container">
 
-  <h1>🚀 ECS Deployment Successful</h1>
+<h1>🚀 AK DevOps Command Center</h1>
 
-  <p>Hello AK</p>
+<p class="subtitle">
+Production Grade AWS ECS Deployment using Terraform & Docker
+</p>
 
-  <div class="card">
+<h2 id="clock"></h2>
 
-    <h3>Services Working</h3>
+<div class="cards">
 
-    <ul>
-      <li>✅ Docker</li>
-      <li>✅ Terraform</li>
-      <li>✅ ECS Fargate</li>
-      <li>✅ ECR</li>
-      <li>✅ GitHub Actions CI/CD</li>
-      <li>✅ Application Load Balancer</li>
-    </ul>
+<div class="card">
+<h3>🐳 Docker</h3>
+<p>Container Running</p>
+</div>
 
-  </div>
+<div class="card">
+<h3>🏗 Terraform</h3>
+<p>Infrastructure Managed</p>
+</div>
+
+<div class="card">
+<h3>☁ AWS ECS</h3>
+<p>Service Healthy</p>
+</div>
+
+<div class="card">
+<h3>📦 Amazon ECR</h3>
+<p>Connected</p>
+</div>
+
+<div class="card">
+<h3>⚡ CI/CD</h3>
+<p>GitHub Actions Enabled</p>
+</div>
+
+<div class="card">
+<h3>🌐 Load Balancer</h3>
+<p>Active</p>
+</div>
 
 </div>
+
+<div class="architecture">
+<h2>AWS Architecture</h2>
+
+<pre>
+User
+ │
+ ▼
+Application Load Balancer
+ │
+ ▼
+ECS Service
+ │
+ ▼
+Docker Container
+ │
+ ▼
+Amazon ECR
+</pre>
+
+</div>
+
+<div class="architecture">
+<h2>Deployment History</h2>
+
+<p>✅ Deployment #5</p>
+<p>✅ Deployment #4</p>
+<p>✅ Deployment #3</p>
+
+</div>
+
+<div class="architecture">
+<h2>AK DevOps Portfolio</h2>
+
+<p>AWS • Docker • Terraform • ECS • Linux • CI/CD</p>
+
+</div>
+
+<div class="footer">
+Built by AK 🚀
+</div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
