@@ -1,16 +1,16 @@
-// Live Clock
-setInterval(() => {
-    document.getElementById("clock").innerText =
-        new Date().toLocaleString();
-}, 1000);
+let count = 15;
 
-// Deployment Time
-document.getElementById("deployTime").innerText =
-    new Date().toLocaleString();
+function updateTime(){
+    document.getElementById("time").innerText = new Date().toLocaleString();
+}
 
-// Visitor Counter
-fetch("https://api.countapi.xyz/hit/ak-devops-dashboard/visits")
-    .then(res => res.json())
-    .then(data => {
-        document.getElementById("visits").innerText = data.value;
-    });
+function updateDeploys(){
+    count++;
+    document.getElementById("deploys").innerText = count;
+}
+
+setInterval(updateTime,1000);
+setInterval(updateDeploys,5000);
+
+updateTime();
+updateDeploys();
